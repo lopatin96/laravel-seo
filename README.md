@@ -19,6 +19,9 @@ Add custom titles and descriptions
 // or with params
 
 <x-laravel-seo::title title="terms-of-service_title" :params="['title' => 'Title']" />
+
+// or strict-title (without localization)
+<x-laravel-seo::title :strict-title="$post->meta_title ?: $post->title" />
 ```
 
 # Publishing
