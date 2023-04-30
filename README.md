@@ -14,7 +14,11 @@ php artisan vendor:publish --tag="laravel-seo-lang"
 ### Custom titles & descriptions
 Add custom titles and descriptions
 ```html
-<x-laravel-seo::title :title="config('app.name') . ': ' . __('seo.view-name_title')" />
+<x-laravel-seo::title title="privacy-policy_title" />
+
+// or with params
+
+<x-laravel-seo::title title="terms-of-service_title" :params="['title' => 'Title']" />
 ```
 
 # Publishing

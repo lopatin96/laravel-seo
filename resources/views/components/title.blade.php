@@ -1,1 +1,1 @@
-@section('title', $title)
+@section('title', config('app.name') . ': ' . __("laravel-seo::seo.$title", $params ?? []))
