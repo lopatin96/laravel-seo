@@ -11,4 +11,6 @@ return [
 
     'terms-of-service_title' => 'Terms of Service',
     'privacy-policy_title' => 'Privacy Policy',
+
+    'blog_title' => 'Blog',
 ];
