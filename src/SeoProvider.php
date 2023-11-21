@@ -14,6 +14,7 @@ class SeoProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-seo');
+
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'laravel-seo');
 
         $this->publishes([

@@ -1,5 +1,5 @@
 @isset($strictTitle)
-    @section('title', config('app.name') . ': ' . $strictTitle)
+    @section('title', "$strictTitle | " . config('app.name'))
 @else
-    @section('title', config('app.name') . ': ' . __("laravel-seo::seo.$title", $params ?? []))
+    @section('title', __("laravel-seo::seo.$title", $params ?? []) . ' | ' . config('app.name'))
 @endisset
